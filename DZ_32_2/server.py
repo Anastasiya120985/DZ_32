@@ -1,7 +1,7 @@
 import socket
 
 server = socket.socket()
-server.bind((socket.gethostname(), 9090))
+server.bind(('localhost', 9090))
 server.listen(5)
 
 print('Сервер запущен')
