@@ -1,7 +1,7 @@
 import socket
 
 client = socket.socket()
-client.connect((socket.gethostname(), 9090))
+client.connect('localhost', 9090))
 
 file = open('test.txt', 'wb')
 print('Получение данных с сервера')
